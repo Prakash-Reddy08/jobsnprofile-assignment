@@ -24,7 +24,6 @@ const Resume = () => {
 const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -102,6 +101,7 @@ const Text = styled.div`
     }
     @media (max-width:500px){
         width: 16rem;
+        padding: 1rem;
     }
 `
 const ResumeImage = styled.div`

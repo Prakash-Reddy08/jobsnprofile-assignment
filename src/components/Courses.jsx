@@ -12,6 +12,7 @@ const Courses = () => {
                         return <CourseCard image={image} title={title} info={info} key={index} />
                     })}
                 </div>
+                <button>Browse Courses</button>
             </div>
         </Wrapper>
     )
@@ -27,6 +28,18 @@ const Wrapper = styled.div`
         h2{
             margin-bottom: 1rem;
         }
+        @media (max-width:559px){
+            margin: 2rem 4rem;
+        }
+        @media (max-width:425px){
+            margin: 2rem 2rem;
+        }
+        @media (max-width:361px){
+            margin: 2rem 1rem;
+            h2{
+                font-size: large;
+            }
+        }
     }
     .courses-cards{
         display: grid;
@@ -34,6 +47,10 @@ const Wrapper = styled.div`
         grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)) ;
         row-gap: 2rem;
         column-gap: 2rem;
+        justify-items: center;
+    }
+    button{
+        margin-top: 1rem;
     }
 `
 export default Courses

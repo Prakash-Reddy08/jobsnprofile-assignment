@@ -9,6 +9,9 @@ import TopCompanies from './components/TopCompanies';
 import Types from './components/Types';
 import Companies from './components/Companies';
 import Courses from './components/Courses';
+import Newsletter from './components/Newsletter';
+import DownloadApp from './components/DownloadApp';
+import LinksAndServices from './components/LinksAndServices';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Types />
         <Companies />
         <Courses />
+        <Newsletter />
+        <DownloadApp />
+        <LinksAndServices />
       </Main>
     </Wrapper>
   );

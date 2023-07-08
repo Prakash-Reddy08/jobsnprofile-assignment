@@ -1,32 +1,32 @@
 import { useState } from "react";
 import styled from "styled-components";
 const Nav = () => {
-    const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
 
-    return (
-        <NavContainer>
-            <Logo><img src="/src/assets/jobsnProfiles.f33d93c90b2431689a89.webp" alt="" /></Logo>
-            <LinksContainer>
-                <NavList className={isNavOpen ? "open" : ""}>
-                    <NavItem>Link 1</NavItem>
-                    <NavItem>Link 2</NavItem>
-                    <NavItem>Link 3</NavItem>
-                    <NavItem>Link 4</NavItem>
-                    <NavItem>Link 5</NavItem>
-                    <NavItem>Link 6</NavItem>
-                </NavList>
-                <Hamburger onClick={toggleNav}>
-                    <div className="hamburger-line"></div>
-                    <div className="hamburger-line"></div>
-                    <div className="hamburger-line"></div>
-                </Hamburger>
-            </LinksContainer>
-        </NavContainer>
-    );
+  return (
+    <NavContainer>
+      <Logo><img src="/src/assets/jobsnProfiles.f33d93c90b2431689a89.webp" alt="" /></Logo>
+      <LinksContainer>
+        <NavList className={isNavOpen ? "open" : ""}>
+          <NavItem>Link 1</NavItem>
+          <NavItem>Link 2</NavItem>
+          <NavItem>Link 3</NavItem>
+          <NavItem>Link 4</NavItem>
+          <NavItem>Link 5</NavItem>
+          <NavItem>Link 6</NavItem>
+        </NavList>
+        <Hamburger onClick={toggleNav}>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+        </Hamburger>
+      </LinksContainer>
+    </NavContainer>
+  );
 };
 
 const NavContainer = styled.nav`
@@ -67,7 +67,7 @@ const LinksContainer = styled.div`
         background-color: #406882;
         padding: 0 2rem 2rem 2rem;
         position: absolute;
-        top: 6rem;
+        top: 5.6rem;
         left: 0;
         right: 0;
         display: flex;
